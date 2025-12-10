@@ -5,43 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Freehand</title>
 </head>
 
 <body>
-  <main>
-    <header>
-      <div>
-        <h1>Freehand</h1>
-      </div>
-    </header>
-    <section>
-      <span>OUR SERVICES</span>
-      <h2>We build experience</h2>
-      <ul>
-        <li>
-          <h3>Design</h3>
-          <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
-          <a href="">Learn more</a>
-        </li>
-        <li>
-          <h3>Ecommerce</h3>
-          <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
-          <a href="">Learn more</a>
-        </li>
-        <li>
-          <h3>Application</h3>
-          <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
-          <a href="">Learn more</a>
-        </li>
-      </ul>
-    </section>
+  <header class="header">
+    <div class="container">
+      <img src="./images/Logo.svg" alt="logo">
+      <span>Freehand</span>
+    </div>
+    <hr>
+  </header>
 
-    <footer>
-      <div class="container">Freehand</div>
-    </footer>
+  <main class="container">
+    <span>OUR SERVICES</span>
+    <h2>We build experience</h2>
+    <ul class="cards">
+      <li class="item">
+        <img src="./images/megaphone-blue.svg" alt="megaphone-blue">
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
+        <a href="">Learn more</a>
+      </li>
+      <li class="item">
+        <img src="./images/building-blue.svg" alt="building-blue">
+        <h3>Ecommerce</h3>
+        <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
+        <a href="">Learn more</a>
+      </li>
+      <li class="item">
+        <img src="./images/phone-blue.svg" alt="phone-blue">
+        <h3>Application</h3>
+        <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .</p>
+        <a href="">Learn more</a>
+      </li>
+    </ul>
   </main>
 
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <img src="./images/Logo.svg" alt="logo">
+        <span>Freehand</span>
+      </div>
+      <ul>
+        <li class="social">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#instagram-icon"></use>
+          </svg>
+        </li>
+        <li class="social">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#facebook-icon"></use>
+          </svg>
+        </li>
+        <li class="social">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#github-icon"></use>
+          </svg>
+        </li>
+        <li class="social">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#dribbble-icon"></use>
+          </svg>
+        </li>
+        <li class="social">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#twitter-icon"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

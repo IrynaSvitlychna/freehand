@@ -1,12 +1,23 @@
-body {
-  margin: 0;
+:root {
+  --lighten-blue: #e8f3ff;
+  --text: #16133d;
+  --light-gray: #efeef3;
+  --gray: #7690a8;
+  --lighten-gray: #e5eaf4;
+  --green: #3db370;
+  --light-green: #52c29d;
+  --white: #fff;
+  --black: #0d0d0d;
 }
 
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Quicksand", sans-serif;
+  --third-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  max-width: 1440px;
 }
 
 .container {
@@ -15,9 +26,171 @@ h3 {
 }
 
 header {
-  display: flex;
+  padding-top: 23px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  span {
+    font-family: var(--second-family);
+    margin-left: 13px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--text);
+    padding: 0;
+  }
+
+  hr {
+    margin-top: 23px;
+    border: none;
+    background-color: var(--light-gray);
+    min-height: 1px;
+    width: 100%;
+  }
 }
+
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--gray);
+  }
+
+  h2 {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2em;
+    color: var(--text);
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 30px;
+
+    .item {
+      width: 370px;
+      border: 1px solid var(--lighten-gray);
+      border-radius: 8px;
+      padding: 40px;
+
+      img {
+        box-sizing: border-box;
+        width: 64px;
+        height: 64px;
+        padding: 14px;
+        border: 1px solid var(--lighten-blue);
+        border-radius: 16px;
+      }
+
+      &:hover {
+        border: 1px solid var(--light-green);
+
+        img {
+          border: 1px solid var(--light-green);
+        }
+      }
+
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 21px;
+        letter-spacing: 0.2em;
+        color: var(--text);
+      }
+
+      p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--text);
+        margin-bottom: 30px;
+        width: 275px;
+      }
+
+      a {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--green);
+      }
+    }
+
+    :first-child:hover {
+      img {
+        content: url(./images/megaphone-green.svg);
+      }
+    }
+
+    :nth-child(2):hover {
+      img {
+        content: url(./images/building-green.svg);
+      }
+    }
+
+    :last-child:hover {
+      img {
+        content: url(./images/phone-green.svg);
+      }
+    }
+  }
+}
+
 footer {
   background-color: rgb(14, 14, 63);
-  height: 193px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  span {
+    font-family: var(--second-family);
+    margin-left: 13px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--white);
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+
+    li {
+      box-sizing: border-box;
+      width: 38px;
+      height: 38px;
+      background: var(--light-gray);
+      padding: 9px;
+      border-radius: 2px;
+      align-content: center;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--black);
+
+        &:hover {
+          fill: var(--green);
+        }
+      }
+    }
+  }
 }
